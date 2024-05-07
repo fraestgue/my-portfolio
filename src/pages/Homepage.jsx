@@ -13,7 +13,7 @@ function Homepage() {
         <h3>¿Quieres ver mi portfolio? tienes estás dos opciones: </h3>
         <div className='botones'>
 
-        <a href='' >
+        <a href='https://main--feg2dportfolio.netlify.app/' >
             <button className='botonpatata'>Juego 2D</button>
         </a>
             
