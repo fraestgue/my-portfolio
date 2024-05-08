@@ -26,19 +26,6 @@ nav {
   padding-top: 20px;
 }
 
-.footer {
-  display: flex;
-  justify-content: space-around;
-  bottom: 0;
-  position: absolute;
-  width: 100%;
-}
-
-.pie {
-  margin-top: 20px;
-  height: 100px;
-}
-
 
 .link {
   display: flex;
