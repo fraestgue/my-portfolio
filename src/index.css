@@ -163,7 +163,7 @@ button:focus-visible {
   }
 
   .descripcion {
-    width: 400px;
+    width: 96vw;
     position: relative;
     text-align: center;
     margin: auto;
@@ -172,7 +172,7 @@ button:focus-visible {
   } 
 
   .paquetes {
-    width: 380px;
+    width: 90vw;
     flex-direction: row;
    
   }
@@ -183,7 +183,7 @@ button:focus-visible {
   }
 
   .proyecto-img {
-    width: 400px;
+    width: 100vw;
     height: 200px;
     border-radius: 10%;
     margin: auto;
@@ -192,7 +192,7 @@ button:focus-visible {
   .boton {
     position: absolute;
     top: 145px;
-    left: 10px;
+    left: 5px;
     z-index: 1;
     background-color: whitesmoke;
   }
@@ -200,13 +200,13 @@ button:focus-visible {
   .boton2 {
     position: absolute;
     top: 145px;
-    right: 10px;
+    right: 5px;
     z-index: 1;
     background-color: whitesmoke;
   }
 
   .home {
-    width: 400px;
+    width: 93vw;
     margin: auto;
   }
 
