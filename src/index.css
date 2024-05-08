@@ -5,7 +5,6 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -69,6 +68,9 @@ button:focus-visible {
 
 .button-container {
   position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
 }
 
 .boton {
@@ -102,12 +104,11 @@ button:focus-visible {
   margin: auto;
   padding-bottom: 10px;
   padding-top: 15px;
-} 
+}
 
 .paquetes {
   width: 400px;
   flex-direction: row;
- 
 }
 
 .home {
@@ -155,8 +156,6 @@ button:focus-visible {
   width: 100vw;
 }
 
-
-
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   [class*="col-"] {
@@ -169,13 +168,12 @@ button:focus-visible {
     text-align: center;
     margin: auto;
     padding-bottom: 10px;
-    padding-top: 15px;
-  } 
+    padding-top: 35px;
+  }
 
   .paquetes {
     width: 90vw;
     flex-direction: row;
-   
   }
 
   .proyectos {
@@ -192,18 +190,26 @@ button:focus-visible {
 
   .boton {
     position: absolute;
-    top: 145px;
-    left: 5px;
+    top: 220px;
+    width: 40vw;
     z-index: 1;
     background-color: whitesmoke;
   }
-  
+
   .boton2 {
     position: absolute;
-    top: 145px;
-    right: 5px;
+    top: 220px;
+    width: 40vw;
     z-index: 1;
     background-color: whitesmoke;
+  }
+
+  .button-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    margin: auto;
   }
 
   .home {
@@ -226,11 +232,9 @@ button:focus-visible {
     /* position: absolute; */
     width: 100%;
   }
-  
+
   .pie {
     margin-top: 20px;
     height: 100px;
   }
 }
-
-
