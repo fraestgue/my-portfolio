@@ -52,8 +52,6 @@ function Proyectos() {
                   <img
                     src={mandalorian}
                     data-atropos-offset="0"
-                    width={"600px"}
-                    height={"280px"}
                     className="proyecto-img"
                   />
                    <a href={eachData.github} target="blank">
@@ -74,8 +72,6 @@ function Proyectos() {
                   <img
                     src={gamehype}
                     data-atropos-offset="0"
-                    width={"600px"}
-                    height={"280px"}
                     className="proyecto-img"
                   />
                   <a href={eachData.github} target="blank">
@@ -97,8 +93,6 @@ function Proyectos() {
                   <img
                     src={ciclocero}
                     data-atropos-offset="0"
-                    width={"600px"}
-                    height={"280px"}
                     className="proyecto-img"
                   />
                   <a href={eachData.github} target="blank">

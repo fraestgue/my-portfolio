@@ -12,18 +12,16 @@ body {
 
 .link-inactive {
   text-decoration: none;
-  color: #110BC8;
+  color: #E8C0F1;
 }
 
 .link-active {
   text-decoration: underline;
-  color:#3935A2;
+  color:#EF95F1;
   font-weight: bold;
 }
 
 nav {
-  /* display: flex;
-  justify-content: space-around; */
   padding-bottom: 5px;
   padding-top: 20px;
 }
@@ -38,8 +36,9 @@ nav {
 
 .pie {
   margin-top: 20px;
-  height: 150px;
+  height: 100px;
 }
+
 
 .link {
   display: flex;
@@ -50,14 +49,14 @@ nav {
 
 
 .dark-page {
-  /* background-color: black; */
+  background-color: black;
   color: whitesmoke;
   min-height: 100vh;
   min-width: 100vw;
 }
 
 .light-page {
-  /* background-color: rgb(244, 236, 236); */
+  background-color: #F4ECEC;
   color: rgb(44, 44, 44);
   min-height: 100vh;
   min-width: 100vw;
@@ -75,9 +74,6 @@ nav {
   border-radius: 15%;
 }
 
-.proyecto-img {
-  border-radius: 10%;
-}
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */

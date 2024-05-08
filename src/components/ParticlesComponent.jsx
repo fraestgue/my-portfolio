@@ -7,15 +7,15 @@ import { ThemeContext } from "../context/theme.context";
 
 const ParticlesComponent = (props) => {
   const { darkTheme } = useContext(ThemeContext);
-  let backgroundPage;
-  let particlesColor;
-  if (darkTheme) {
-    backgroundPage = "#000000"
-    particlesColor = "#FFFFFF"
-  } else {
-    backgroundPage = "#F4ECEC"
-    particlesColor = "#000000"
-  }
+  // let backgroundPage;
+  // let particlesColor;
+  // if (darkTheme) {
+  //   backgroundPage = "#000000"
+  //   particlesColor = "#FFFFFF"
+  // } else {
+  //   backgroundPage = "#F4ECEC"
+  //   particlesColor = "#000000"
+  // }
 
   const [init, setInit] = useState(false);
   
@@ -37,7 +37,7 @@ const ParticlesComponent = (props) => {
     () => ({
       background: {
         color: {
-          value: backgroundPage,
+          value: darkTheme ? "#000000" : "#F4ECEC",
         },
       },
       fpsLimit: 120,
@@ -64,10 +64,10 @@ const ParticlesComponent = (props) => {
       },
       particles: {
         color: {
-          value: particlesColor,
+          value: darkTheme ? "#FFFFFF" : "#000000",
         },
         links: {
-          color: particlesColor,
+          color: darkTheme ? "#FFFFFF" : "#000000",
           distance: 150,
           enable: true,
           opacity: 0.7,

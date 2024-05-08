@@ -20,7 +20,7 @@ function NavbarComp() {
   return (
     <nav>
         
-        <button onClick={toggleTheme}>{darkTheme === true ? "☼" : "☾" }</button>
+        {/* <button onClick={toggleTheme}>{darkTheme === true ? "☼" : "☾" }</button> */}
         <div className='link'>
 
         <NavLink className={navCheck} to="/">Home</NavLink>

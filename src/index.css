@@ -120,6 +120,12 @@ button:focus-visible {
   margin: auto;
 }
 
+.proyecto-img {
+  width: 600px;
+  height: 280px;
+  border-radius: 10%;
+}
+
 .particles {
   z-index: -1;
   min-width: 100vw;
@@ -135,10 +141,34 @@ button:focus-visible {
   z-index: 999;
 }
 
+
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   [class*="col-"] {
     width: 100vw;
+  }
+
+  .descripcion {
+    width: 400px;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 10px;
+    padding-top: 15px;
+  } 
+
+  .paquetes {
+    width: 380px;
+    flex-direction: row;
+   
+  }
+
+  .proyecto-img {
+    width: 400px;
+    height: 200px;
+    border-radius: 10%;
+    margin: auto;
   }
 }
 
