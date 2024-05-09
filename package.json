@@ -12,6 +12,7 @@
   "dependencies": {
     "@tsparticles/all": "^3.3.0",
     "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.3.0",
     "atropos": "^2.0.2",
     "i18n": "^0.15.1",
     "react": "^18.2.0",
