@@ -155,6 +155,10 @@ button:focus-visible {
   position: absolute;
   width: 100vw;
 }
+.botonpatata {
+  background-color: chocolate;
+  color: #F4ECEC;
+}
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
@@ -236,5 +240,11 @@ button:focus-visible {
   .pie {
     margin-top: 20px;
     height: 100px;
+  }
+
+  .botonpatata {
+    background-color: chocolate;
+    color: #F4ECEC;
+    
   }
 }
