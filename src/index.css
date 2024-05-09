@@ -195,7 +195,7 @@ button:focus-visible {
 
   .boton {
     position: absolute;
-    top: 220px;
+    top: 295px;
     width: 40vw;
     z-index: 1;
     background-color: whitesmoke;
@@ -203,7 +203,7 @@ button:focus-visible {
 
   .boton2 {
     position: absolute;
-    top: 220px;
+    top: 295px;
     width: 40vw;
     z-index: 1;
     background-color: whitesmoke;
