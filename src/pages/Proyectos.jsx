@@ -41,6 +41,7 @@ function Proyectos() {
             <div key={index} className="atropos">
               <hr />
               <h2>{eachData.nombre}</h2>
+              
               <Atropos className="my-atropos">
                 {eachData.nombre === "GAMEHYPE" && (
                   <div className="button-container">
