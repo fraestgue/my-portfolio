@@ -147,6 +147,7 @@ button:focus-visible {
   justify-content: space-around;
   bottom: 0;
   width: 100%;
+  position: absolute;
 }
 
 .pie {
