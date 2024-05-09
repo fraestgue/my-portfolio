@@ -3,7 +3,7 @@ import { useEffect, useMemo, useState } from "react";
 import { loadSlim } from "@tsparticles/slim";
 
 const ParticlesComponent = (props) => {
-  const [init, setInit] = useState(false);
+  const [init, setInit] = useState(true);
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
