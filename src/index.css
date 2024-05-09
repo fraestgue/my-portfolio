@@ -75,7 +75,7 @@ button:focus-visible {
 
 .boton {
   position: absolute;
-  top: 290px;
+  top: 220px;
   left: 20px;
   z-index: 1;
   background-color: whitesmoke;
@@ -83,7 +83,7 @@ button:focus-visible {
 
 .boton2 {
   position: absolute;
-  top: 290px;
+  top: 220px;
   right: 20px;
   z-index: 1;
   background-color: whitesmoke;

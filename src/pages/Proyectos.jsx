@@ -49,6 +49,16 @@ function Proyectos() {
                       data-atropos-offset="0"
                       className="proyecto-img"
                     />
+                    <a href={eachData.github} target="blank">
+                      <button className="boton">
+                        <img src={github} alt="github" width={"15px"} />
+                      </button>
+                    </a>
+                    <a href={eachData.enlace} target="blank">
+                      <button className="boton2">
+                        <img src={enlace} alt="enlace" width={"15px"} />
+                      </button>
+                    </a>
                   </div>
                 )}
                 {eachData.nombre === "Ciclocero" && (
@@ -59,6 +69,16 @@ function Proyectos() {
                         data-atropos-offset="0"
                         className="proyecto-img"
                       />
+                      <a href={eachData.github} target="blank">
+                        <button className="boton">
+                          <img src={github} alt="github" width={"15px"} />
+                        </button>
+                      </a>
+                      <a href={eachData.enlace} target="blank">
+                        <button className="boton2">
+                          <img src={enlace} alt="enlace" width={"15px"} />
+                        </button>
+                      </a>
                     </div>
                   </div>
                 )}
@@ -69,20 +89,20 @@ function Proyectos() {
                       data-atropos-offset="0"
                       className="proyecto-img"
                     />
+
+                    <a href={eachData.github} target="blank">
+                      <button className="boton">
+                        <img src={github} alt="github" width={"15px"} />
+                      </button>
+                    </a>
+                    <a href={eachData.enlace} target="blank">
+                      <button className="boton2">
+                        <img src={enlace} alt="enlace" width={"15px"} />
+                      </button>
+                    </a>
                   </div>
                 )}
               </Atropos>
-
-              <a href={eachData.github} target="blank">
-                <button className="boton">
-                  <img src={github} alt="github" width={"15px"} />
-                </button>
-              </a>
-              <a href={eachData.enlace} target="blank">
-                <button className="boton2">
-                  <img src={enlace} alt="enlace" width={"15px"} />
-                </button>
-              </a>
 
               <div className="descripcion">
                 <p className="descripcion">{eachData.descripcion}</p>
