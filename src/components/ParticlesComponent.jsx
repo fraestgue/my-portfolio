@@ -1,29 +1,13 @@
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { useContext, useEffect, useMemo, useState } from "react";
-
-import { loadSlim } from "@tsparticles/slim"; 
-import { ThemeContext } from "../context/theme.context";
-
+import { useEffect, useMemo, useState } from "react";
+import { loadSlim } from "@tsparticles/slim";
 
 const ParticlesComponent = (props) => {
-  const { darkTheme } = useContext(ThemeContext);
-  // let backgroundPage;
-  // let particlesColor;
-  // if (darkTheme) {
-  //   backgroundPage = "#000000"
-  //   particlesColor = "#FFFFFF"
-  // } else {
-  //   backgroundPage = "#F4ECEC"
-  //   particlesColor = "#000000"
-  // }
-
   const [init, setInit] = useState(false);
-  
+
   useEffect(() => {
     initParticlesEngine(async (engine) => {
-     
       await loadSlim(engine);
-      
     }).then(() => {
       setInit(true);
     });
@@ -37,7 +21,7 @@ const ParticlesComponent = (props) => {
     () => ({
       background: {
         color: {
-          value:  "#000000",
+          value: "#000000",
         },
       },
       fpsLimit: 120,

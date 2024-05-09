@@ -55,7 +55,7 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: whitesmoke;
     /* background-color: #ffffff; */
   }
   a:hover {
@@ -75,7 +75,7 @@ button:focus-visible {
 
 .boton {
   position: absolute;
-  top: 220px;
+  top: 290px;
   left: 20px;
   z-index: 1;
   background-color: whitesmoke;
@@ -83,7 +83,7 @@ button:focus-visible {
 
 .boton2 {
   position: absolute;
-  top: 220px;
+  top: 290px;
   right: 20px;
   z-index: 1;
   background-color: whitesmoke;
@@ -158,7 +158,7 @@ button:focus-visible {
 }
 .botonpatata {
   background-color: chocolate;
-  color: #F4ECEC;
+  color: #f4ecec;
 }
 
 @media only screen and (max-width: 768px) {
@@ -245,7 +245,6 @@ button:focus-visible {
 
   .botonpatata {
     background-color: chocolate;
-    color: #F4ECEC;
-    
+    color: #f4ecec;
   }
 }

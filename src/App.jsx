@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import { ThemeContext } from "./context/theme.context";
+
 import Homepage from "./pages/Homepage";
 import Proyectos from "./pages/Proyectos";
 import Footer from "./components/Footer";
@@ -9,12 +9,12 @@ import NavbarComp from "./components/NavbarComp";
 import ParticlesComponent from "./components/ParticlesComponent";
 
 function App() {
-  const { darkTheme } = useContext(ThemeContext);
+  
 
   return (
     <div>
       <ParticlesComponent className="particles" />
-    <div className={darkTheme === true ? "dark-page" : "light-page"}>
+    <div >
 
     
       <div className="pagina">

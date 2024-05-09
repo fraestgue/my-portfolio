@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import data from "../utils/data.json";
 import mandalorian from "../assets/imagenes/mandalorian.png";
@@ -9,7 +9,6 @@ import enlace from "../assets/imagenes/clip.png";
 import Atropos from "atropos/react";
 
 function Proyectos() {
-  const [open, setOpen] = useState(false);
   const navigate = useNavigate();
   const myAtropos = Atropos({
     el: ".my-atropos",
@@ -50,16 +49,6 @@ function Proyectos() {
                       data-atropos-offset="0"
                       className="proyecto-img"
                     />
-                    {/* <a href={eachData.github} target="blank">
-                      <button className="boton">
-                        <img src={github} alt="github" width={"15px"} />
-                      </button>
-                    </a>
-                    <a href={eachData.enlace} target="blank">
-                      <button className="boton2">
-                        <img src={enlace} alt="enlace" width={"15px"} />
-                      </button>
-                    </a> */}
                   </div>
                 )}
                 {eachData.nombre === "Ciclocero" && (
@@ -70,16 +59,6 @@ function Proyectos() {
                         data-atropos-offset="0"
                         className="proyecto-img"
                       />
-                      {/* <a href={eachData.github} target="blank">
-                        <button className="boton">
-                          <img src={github} alt="github" width={"15px"} />
-                        </button>
-                      </a>
-                      <a href={eachData.enlace} target="blank">
-                        <button className="boton2">
-                          <img src={enlace} alt="enlace" width={"15px"} />
-                        </button>
-                      </a> */}
                     </div>
                   </div>
                 )}
@@ -90,30 +69,20 @@ function Proyectos() {
                       data-atropos-offset="0"
                       className="proyecto-img"
                     />
-                    {/* <a href={eachData.github} target="blank">
-                      <button className="boton">
-                        <img src={github} alt="github" width={"15px"} />
-                      </button>
-                    </a>
-                    <a href={eachData.enlace} target="blank">
-                      <button className="boton2">
-                        <img src={enlace} alt="enlace" width={"15px"} />
-                      </button>
-                    </a> */}
                   </div>
                 )}
               </Atropos>
 
               <a href={eachData.github} target="blank">
-                      <button className="boton">
-                        <img src={github} alt="github" width={"15px"} />
-                      </button>
-                    </a>
-                    <a href={eachData.enlace} target="blank">
-                      <button className="boton2">
-                        <img src={enlace} alt="enlace" width={"15px"} />
-                      </button>
-                    </a>
+                <button className="boton">
+                  <img src={github} alt="github" width={"15px"} />
+                </button>
+              </a>
+              <a href={eachData.enlace} target="blank">
+                <button className="boton2">
+                  <img src={enlace} alt="enlace" width={"15px"} />
+                </button>
+              </a>
 
               <div className="descripcion">
                 <p className="descripcion">{eachData.descripcion}</p>
