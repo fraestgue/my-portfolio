@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@tsparticles/all": "^3.3.0",
+    "@tsparticles/basic": "^3.3.0",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.3.0",
     "atropos": "^2.0.2",
