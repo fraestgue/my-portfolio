@@ -8,6 +8,7 @@ const ParticlesComponent = (props) => {
 
   // const [init, setInit] = useState(false);
 
+  
   useEffect(() => {
     const initializeParticles = async () => {
       await initParticlesEngine(async (engine) => {
