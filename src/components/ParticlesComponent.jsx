@@ -1,27 +1,33 @@
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { useEffect, useMemo, useState } from "react";
+import { useContext, useEffect, useMemo, useState } from "react";
 import { loadSlim } from "@tsparticles/slim";
+import { ThemeContext } from '../context/theme.context'
 
 const ParticlesComponent = (props) => {
-  const [init, setInit] = useState(false);
+  const { darkTheme } = useContext(ThemeContext);
+
+  // const [init, setInit] = useState(false);
 
   useEffect(() => {
-    initParticlesEngine(async (engine) => {
-      await loadSlim(engine);
-    }).then(() => {
-      setInit(true);
-    });
+    const initializeParticles = async () => {
+      await initParticlesEngine(async (engine) => {
+        await loadSlim(engine);
+      });
+    };
+  
+    initializeParticles();
   }, []);
-
+  
+ 
   const particlesLoaded = (container) => {
-    // console.log(container);
+    console.log(container);
   };
 
-  const options = useMemo(
-    () => ({
+  const options = 
+      {
       background: {
         color: {
-          value: "#000000",
+          value: darkTheme ? "#000000" : "#F4ECEC",
         },
       },
       fpsLimit: 120,
@@ -48,10 +54,10 @@ const ParticlesComponent = (props) => {
       },
       particles: {
         color: {
-          value: "#FFFFFF",
+          value: darkTheme ? "#FFFFFF" : "#000000",
         },
         links: {
-          color: "#FFFFFF",
+          color: darkTheme ? "#FFFFFF" : "#000000",
           distance: 150,
           enable: true,
           opacity: 0.7,
@@ -84,9 +90,8 @@ const ParticlesComponent = (props) => {
         },
       },
       detectRetina: true,
-    }),
-    []
-  );
+    }
+ 
 
   return <Particles id={props.id} init={particlesLoaded} options={options} />;
 };

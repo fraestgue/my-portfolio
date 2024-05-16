@@ -5,9 +5,13 @@ import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 
 import "atropos/css";
+import { ThemeWrapper } from "./context/theme.context.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
+  <ThemeWrapper>
+
     <App />
+  </ThemeWrapper>
   </BrowserRouter>
 );

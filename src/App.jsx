@@ -7,14 +7,17 @@ import Proyectos from "./pages/Proyectos";
 import Footer from "./components/Footer";
 import NavbarComp from "./components/NavbarComp";
 import ParticlesComponent from "./components/ParticlesComponent";
+import { ThemeContext } from "./context/theme.context";
 
 function App() {
+
+  const {darkTheme} = useContext(ThemeContext)
   
 
   return (
-    <div>
+    <div className={darkTheme ? "dark-page" : "light-page"}>
       <ParticlesComponent className="particles" />
-    <div >
+    <div>
 
     
       <div className="pagina">
