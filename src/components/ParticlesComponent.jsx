@@ -6,9 +6,10 @@ import { ThemeContext } from '../context/theme.context'
 const ParticlesComponent = (props) => {
   const { darkTheme } = useContext(ThemeContext);
 
+  
   // const [init, setInit] = useState(false);
 
-  
+
   useEffect(() => {
     const initializeParticles = async () => {
       await initParticlesEngine(async (engine) => {
