@@ -4,6 +4,7 @@ import data from "../utils/data.json";
 import mandalorian from "../assets/imagenes/mandalorian.png";
 import gamehype from "../assets/imagenes/gamehype.png";
 import ciclocero from "../assets/imagenes/ciclocero.png";
+import agc from "../assets/imagenes/agc.jpg"
 import github from "../assets/imagenes/github.png";
 import enlace from "../assets/imagenes/clip.png";
 import Atropos from "atropos/react";
@@ -67,6 +68,27 @@ function Proyectos() {
                     <div className="button-container">
                       <img
                         src={ciclocero}
+                        data-atropos-offset="0"
+                        className="proyecto-img"
+                      />
+                      <a href={eachData.github} target="blank">
+                        <button className="boton">
+                          <img src={github} alt="github" width={"15px"} />
+                        </button>
+                      </a>
+                      <a href={eachData.enlace} target="blank">
+                        <button className="boton2">
+                          <img src={enlace} alt="enlace" width={"15px"} />
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                )}
+                {eachData.nombre === "AGC Gestión" && (
+                  <div>
+                    <div className="button-container">
+                      <img
+                        src={agc}
                         data-atropos-offset="0"
                         className="proyecto-img"
                       />

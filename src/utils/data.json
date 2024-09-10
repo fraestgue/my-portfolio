@@ -17,6 +17,14 @@
             "enlace": "https://ciclocero.netlify.app/"
         },
         {
+            "nombre": "AGC Gestión",
+            "herramientas": ["React", "JavaScript", "HTML", "CSS", "JSON", "librerías de estilo"],
+            "descripcion": "Web desarrollada con React js y su diseño es completamente responsive, adaptándose a diferentes dispositivos. En la versión de escritorio, cuenta con un menú clásico en la barra de navegación, mientras que en móviles implementa un menú desplegable tipo 'burger'.",
+            "paquetes": [ "react-burger-menu", "formspree.io"],
+            "github": "https://github.com/fraestgue/agc-gestion",
+            "enlace": "https://agcgestion.com/"
+        }, 
+        {
             "nombre": "Mandalorian",
             "herramientas": ["Manipulación de DOM", "JavaScript", "HTML", "CSS"],
             "descripcion": "Juego interactivo en el que debes disparar a los enemigos y salvar a los aliados, con mecánica de 'score' y de 'vidas' inspirado en la serie 'The Mandalorian' de la franquicia de 'Star Wars'. Puedes mover al personaje con las teclas ⬆️ ⬇️, y disparar con la tecla espaciadora. Tiene la opción de jugar con o sin música, y además tiene añadidos efectos de sonidos de los disparos y los impactos.",
