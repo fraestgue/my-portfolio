@@ -4,7 +4,7 @@ import data from "../utils/data.json";
 import mandalorian from "../assets/imagenes/mandalorian.png";
 import gamehype from "../assets/imagenes/gamehype.png";
 import ciclocero from "../assets/imagenes/ciclocero.png";
-import agc from "../assets/imagenes/agc.jpg"
+import agc from "../assets/imagenes/agc.png"
 import github from "../assets/imagenes/github.png";
 import enlace from "../assets/imagenes/clip.png";
 import Atropos from "atropos/react";
